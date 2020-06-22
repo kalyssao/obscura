@@ -1,12 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <div class="container">
+            <RwvHeader/>
+            <div class='gradient'></div>
+            <RwvMain/>
+            <RwvFooter/>
+        </div>
     </div>
-    <router-view/>
-  </div>
 </template>
+
+<script>
+import RwvHeader from '@/components/TheHeader.vue';
+import RwvMain from '@/components/MainContent.vue';
+import RwvFooter from '@/components/TheFooter.vue';
+
+export default {
+  name: 'App',
+  components: {
+    RwvHeader,
+    RwvFooter,
+    RwvMain,
+  },
+};
+
+</script>
 
 <style>
 #app {
@@ -16,17 +33,22 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+/*.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+}*/
+.gradient {
+    color: black;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.main {
+    position: relative;
+    grid-area: 2 / 3 / 3 / 4;
+    background: #232323;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 30px 40px;
+    scrollbar-color: #c9c9c9 #303030;
+    scrollbar-width: thin;
 }
 </style>

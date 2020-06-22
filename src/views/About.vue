@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="work">
+    <img src="@/assets/404.png" alt="" />
+    <h3>Not available yet</h3>
   </div>
 </template>
