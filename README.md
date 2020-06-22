@@ -1,4 +1,5 @@
 # obscura
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+🧚🏾‍♀️ For when you feel feelings that you can't pin down
+>>>>>>> d58ebb6394e54f45140476bf724afc2f0de19f77
